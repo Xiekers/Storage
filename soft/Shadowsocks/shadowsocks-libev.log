@@ -1,0 +1,964 @@
+[3;J[H[2J#############################################################
+# Install Shadowsocks-libev server for CentOS 6 or 7        #
+# Intro: https://teddysun.com/357.html                      #
+# Author: Teddysun <i@teddysun.com>                         #
+# Thanks: @m0d8ye <https://twitter.com/m0d8ye>              #
+#############################################################
+
+./shadowsocks-libev.sh: line 43: [: ==: unary operator expected
+Please input password for shadowsocks-libev:
+(Default password: teddysun.com):
+---------------------------
+password = xiaoke
+---------------------------
+
+Please input port for shadowsocks-libev [1-65535]:
+(Default port: 8989):
+---------------------------
+port = 666
+---------------------------
+
+
+Press any key to start...or Press Ctrl+C to cancel
+./shadowsocks-libev.sh: line 109: yum: command not found
+./shadowsocks-libev.sh: line 110: yum: command not found
+Getting Public IP address, Please wait a moment...
+Your main public IP is	[32m123.59.76.229[0m
+
+--2016-06-14 15:28:52--  https://github.com/shadowsocks/shadowsocks-libev/archive/master.zip
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/shadowsocks/shadowsocks-libev/zip/master [following]
+--2016-06-14 15:28:54--  https://codeload.github.com/shadowsocks/shadowsocks-libev/zip/master
+Resolving codeload.github.com (codeload.github.com)... 192.30.253.121
+Connecting to codeload.github.com (codeload.github.com)|192.30.253.121|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1809973 (1.7M) [application/zip]
+Saving to: 'shadowsocks-libev.zip'
+
+     0K .......... .......... .......... .......... ..........  2% 77.3K 22s
+    50K .......... .......... .......... .......... ..........  5% 51.9K 27s
+   100K .......... .......... .......... .......... ..........  8% 77.7K 24s
+   150K .......... .......... .......... .......... .......... 11%  154K 20s
+   200K .......... .......... .......... .......... .......... 14% 51.9K 21s
+   250K .......... .......... .......... .......... .......... 16%  156K 19s
+   300K .......... .......... .......... .......... .......... 19% 75.6K 18s
+   350K .......... .......... .......... .......... .......... 22% 77.6K 18s
+   400K .......... .......... .......... .......... .......... 25% 77.7K 17s
+   450K .......... .......... .......... .......... .......... 28%  139K 16s
+   500K .......... .......... .......... .......... .......... 31% 82.4K 15s
+   550K .......... .......... .......... .......... .......... 33% 77.5K 14s
+   600K .......... .......... .......... .......... .......... 36% 77.9K 14s
+   650K .......... .......... .......... .......... .......... 39% 78.0K 13s
+   700K .......... .......... .......... .......... .......... 42% 77.4K 13s
+   750K .......... .......... .......... .......... .......... 45% 77.9K 12s
+   800K .......... .......... .......... .......... .......... 48% 77.6K 11s
+   850K .......... .......... .......... .......... .......... 50% 80.6K 11s
+   900K .......... .......... .......... .......... .......... 53%  144K 10s
+   950K .......... .......... .......... .......... .......... 56% 77.6K 9s
+  1000K .......... .......... .......... .......... .......... 59% 80.8K 9s
+  1050K .......... .......... .......... .......... .......... 62% 77.6K 8s
+  1100K .......... .......... .......... .......... .......... 65%  144K 7s
+  1150K .......... .......... .......... .......... .......... 67% 81.1K 7s
+  1200K .......... .......... .......... .......... .......... 70%  144K 6s
+  1250K .......... .......... .......... .......... .......... 73%  155K 5s
+  1300K .......... .......... .......... .......... .......... 76%  156K 5s
+  1350K .......... .......... .......... .......... .......... 79%  155K 4s
+  1400K .......... .......... .......... .......... .......... 82%  170K 4s
+  1450K .......... .......... .......... .......... .......... 84%  155K 3s
+  1500K .......... .......... .......... .......... .......... 87% 1.66M 2s
+  1550K .......... .......... .......... .......... .......... 90% 81.1K 2s
+  1600K .......... .......... .......... .......... .......... 93% 16.4M 1s
+  1650K .......... .......... .......... .......... .......... 96% 1.79M 1s
+  1700K .......... .......... .......... .......... .......... 99%  155K 0s
+  1750K .......... .......                                    100% 22.3M=17s
+
+2016-06-14 15:29:13 (102 KB/s) - 'shadowsocks-libev.zip' saved [1809973/1809973]
+
+Archive:  shadowsocks-libev.zip
+d8598d35e31159643c5e6fae138fa9edb19585d8
+   creating: shadowsocks-libev-master/
+  inflating: shadowsocks-libev-master/.gitignore  
+  inflating: shadowsocks-libev-master/.travis.yml  
+  inflating: shadowsocks-libev-master/.uncrustify.cfg  
+  inflating: shadowsocks-libev-master/COPYING  
+  inflating: shadowsocks-libev-master/Changes  
+  inflating: shadowsocks-libev-master/INSTALL  
+  inflating: shadowsocks-libev-master/LICENSE  
+  inflating: shadowsocks-libev-master/Makefile.am  
+  inflating: shadowsocks-libev-master/Makefile.in  
+  inflating: shadowsocks-libev-master/README.md  
+   creating: shadowsocks-libev-master/acl/
+  inflating: shadowsocks-libev-master/acl/chn.acl  
+  inflating: shadowsocks-libev-master/acl/local.acl  
+  inflating: shadowsocks-libev-master/aclocal.m4  
+   creating: shadowsocks-libev-master/auto/
+  inflating: shadowsocks-libev-master/auto/ar-lib  
+  inflating: shadowsocks-libev-master/auto/compile  
+  inflating: shadowsocks-libev-master/auto/config.guess  
+  inflating: shadowsocks-libev-master/auto/config.sub  
+  inflating: shadowsocks-libev-master/auto/depcomp  
+  inflating: shadowsocks-libev-master/auto/install-sh  
+  inflating: shadowsocks-libev-master/auto/ltmain.sh  
+  inflating: shadowsocks-libev-master/auto/missing  
+ extracting: shadowsocks-libev-master/autogen.sh  
+  inflating: shadowsocks-libev-master/config.h.in  
+  inflating: shadowsocks-libev-master/configure  
+  inflating: shadowsocks-libev-master/configure.ac  
+   creating: shadowsocks-libev-master/debian/
+  inflating: shadowsocks-libev-master/debian/.gitignore  
+  inflating: shadowsocks-libev-master/debian/README.Debian  
+  inflating: shadowsocks-libev-master/debian/changelog  
+ extracting: shadowsocks-libev-master/debian/compat  
+  inflating: shadowsocks-libev-master/debian/config.json  
+  inflating: shadowsocks-libev-master/debian/control  
+  inflating: shadowsocks-libev-master/debian/copyright  
+  inflating: shadowsocks-libev-master/debian/copyright.original  
+ extracting: shadowsocks-libev-master/debian/docs  
+ extracting: shadowsocks-libev-master/debian/install  
+  inflating: shadowsocks-libev-master/debian/libshadowsocks-libev-dev.install  
+  inflating: shadowsocks-libev-master/debian/libshadowsocks-libev1.install  
+  inflating: shadowsocks-libev-master/debian/rules  
+  inflating: shadowsocks-libev-master/debian/shadowsocks-libev-local@.service  
+  inflating: shadowsocks-libev-master/debian/shadowsocks-libev-redir@.service  
+  inflating: shadowsocks-libev-master/debian/shadowsocks-libev-server@.service  
+  inflating: shadowsocks-libev-master/debian/shadowsocks-libev-tunnel@.service  
+  inflating: shadowsocks-libev-master/debian/shadowsocks-libev.default  
+  inflating: shadowsocks-libev-master/debian/shadowsocks-libev.init  
+  inflating: shadowsocks-libev-master/debian/shadowsocks-libev.install  
+  inflating: shadowsocks-libev-master/debian/shadowsocks-libev.service  
+   creating: shadowsocks-libev-master/debian/source/
+ extracting: shadowsocks-libev-master/debian/source/format  
+   creating: shadowsocks-libev-master/docker/
+   creating: shadowsocks-libev-master/docker/alpine/
+  inflating: shadowsocks-libev-master/docker/alpine/Dockerfile  
+  inflating: shadowsocks-libev-master/docker/alpine/README.md  
+  inflating: shadowsocks-libev-master/docker/alpine/docker-compose.yml  
+   creating: shadowsocks-libev-master/docker/ubuntu/
+  inflating: shadowsocks-libev-master/docker/ubuntu/Dockerfile  
+  inflating: shadowsocks-libev-master/docker/ubuntu/README.md  
+  inflating: shadowsocks-libev-master/docker/ubuntu/entrypoint  
+   creating: shadowsocks-libev-master/libcork/
+  inflating: shadowsocks-libev-master/libcork/COPYING  
+  inflating: shadowsocks-libev-master/libcork/Makefile.am  
+  inflating: shadowsocks-libev-master/libcork/Makefile.in  
+  inflating: shadowsocks-libev-master/libcork/README.markdown  
+   creating: shadowsocks-libev-master/libcork/cli/
+  inflating: shadowsocks-libev-master/libcork/cli/commands.c  
+   creating: shadowsocks-libev-master/libcork/core/
+  inflating: shadowsocks-libev-master/libcork/core/allocator.c  
+  inflating: shadowsocks-libev-master/libcork/core/error.c  
+  inflating: shadowsocks-libev-master/libcork/core/gc.c  
+  inflating: shadowsocks-libev-master/libcork/core/hash.c  
+  inflating: shadowsocks-libev-master/libcork/core/ip-address.c  
+  inflating: shadowsocks-libev-master/libcork/core/mempool.c  
+  inflating: shadowsocks-libev-master/libcork/core/timestamp.c  
+  inflating: shadowsocks-libev-master/libcork/core/u128.c  
+   creating: shadowsocks-libev-master/libcork/ds/
+  inflating: shadowsocks-libev-master/libcork/ds/array.c  
+  inflating: shadowsocks-libev-master/libcork/ds/bitset.c  
+  inflating: shadowsocks-libev-master/libcork/ds/buffer.c  
+  inflating: shadowsocks-libev-master/libcork/ds/dllist.c  
+  inflating: shadowsocks-libev-master/libcork/ds/file-stream.c  
+  inflating: shadowsocks-libev-master/libcork/ds/hash-table.c  
+  inflating: shadowsocks-libev-master/libcork/ds/managed-buffer.c  
+  inflating: shadowsocks-libev-master/libcork/ds/ring-buffer.c  
+  inflating: shadowsocks-libev-master/libcork/ds/slice.c  
+   creating: shadowsocks-libev-master/libcork/include/
+   creating: shadowsocks-libev-master/libcork/include/libcork/
+  inflating: shadowsocks-libev-master/libcork/include/libcork/cli.h  
+   creating: shadowsocks-libev-master/libcork/include/libcork/cli/
+  inflating: shadowsocks-libev-master/libcork/include/libcork/cli/commands.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config.h  
+   creating: shadowsocks-libev-master/libcork/include/libcork/config/
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config/arch.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config/bsd.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config/config.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config/gcc.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config/linux.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config/macosx.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config/mingw32.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/config/solaris.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core.h  
+   creating: shadowsocks-libev-master/libcork/include/libcork/core/
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/allocator.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/api.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/attributes.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/byte-order.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/callbacks.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/error.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/gc.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/hash.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/id.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/mempool.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/net-addresses.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/timestamp.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/types.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/core/u128.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds.h  
+   creating: shadowsocks-libev-master/libcork/include/libcork/ds/
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/array.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/bitset.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/buffer.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/dllist.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/hash-table.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/managed-buffer.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/ring-buffer.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/slice.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/ds/stream.h  
+   creating: shadowsocks-libev-master/libcork/include/libcork/helpers/
+  inflating: shadowsocks-libev-master/libcork/include/libcork/helpers/errors.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/helpers/gc.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/helpers/posix.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/os.h  
+   creating: shadowsocks-libev-master/libcork/include/libcork/os/
+  inflating: shadowsocks-libev-master/libcork/include/libcork/os/files.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/os/process.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/os/subprocess.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/threads.h  
+   creating: shadowsocks-libev-master/libcork/include/libcork/threads/
+  inflating: shadowsocks-libev-master/libcork/include/libcork/threads/atomics.h  
+  inflating: shadowsocks-libev-master/libcork/include/libcork/threads/basics.h  
+   creating: shadowsocks-libev-master/libcork/posix/
+  inflating: shadowsocks-libev-master/libcork/posix/directory-walker.c  
+  inflating: shadowsocks-libev-master/libcork/posix/env.c  
+  inflating: shadowsocks-libev-master/libcork/posix/exec.c  
+  inflating: shadowsocks-libev-master/libcork/posix/files.c  
+  inflating: shadowsocks-libev-master/libcork/posix/process.c  
+  inflating: shadowsocks-libev-master/libcork/posix/subprocess.c  
+   creating: shadowsocks-libev-master/libcork/pthreads/
+  inflating: shadowsocks-libev-master/libcork/pthreads/thread.c  
+   creating: shadowsocks-libev-master/libev/
+  inflating: shadowsocks-libev-master/libev/Changes  
+  inflating: shadowsocks-libev-master/libev/LICENSE  
+  inflating: shadowsocks-libev-master/libev/Makefile.am  
+  inflating: shadowsocks-libev-master/libev/Makefile.in  
+  inflating: shadowsocks-libev-master/libev/README  
+  inflating: shadowsocks-libev-master/libev/Symbols.ev  
+  inflating: shadowsocks-libev-master/libev/Symbols.event  
+  inflating: shadowsocks-libev-master/libev/aclocal.m4  
+  inflating: shadowsocks-libev-master/libev/autogen.sh  
+  inflating: shadowsocks-libev-master/libev/configure.ac  
+  inflating: shadowsocks-libev-master/libev/ev++.h  
+  inflating: shadowsocks-libev-master/libev/ev.3  
+  inflating: shadowsocks-libev-master/libev/ev.c  
+  inflating: shadowsocks-libev-master/libev/ev.h  
+  inflating: shadowsocks-libev-master/libev/ev.pod  
+  inflating: shadowsocks-libev-master/libev/ev_epoll.c  
+  inflating: shadowsocks-libev-master/libev/ev_kqueue.c  
+  inflating: shadowsocks-libev-master/libev/ev_poll.c  
+  inflating: shadowsocks-libev-master/libev/ev_port.c  
+  inflating: shadowsocks-libev-master/libev/ev_select.c  
+  inflating: shadowsocks-libev-master/libev/ev_vars.h  
+  inflating: shadowsocks-libev-master/libev/ev_win32.c  
+  inflating: shadowsocks-libev-master/libev/ev_wrap.h  
+  inflating: shadowsocks-libev-master/libev/event.c  
+  inflating: shadowsocks-libev-master/libev/event.h  
+  inflating: shadowsocks-libev-master/libev/libev.m4  
+   creating: shadowsocks-libev-master/libipset/
+  inflating: shadowsocks-libev-master/libipset/LICENSE.txt  
+  inflating: shadowsocks-libev-master/libipset/Makefile.am  
+  inflating: shadowsocks-libev-master/libipset/Makefile.in  
+  inflating: shadowsocks-libev-master/libipset/README.markdown  
+   creating: shadowsocks-libev-master/libipset/bdd/
+  inflating: shadowsocks-libev-master/libipset/bdd/Makefile.am  
+ extracting: shadowsocks-libev-master/libipset/bdd/Makefile.in  
+  inflating: shadowsocks-libev-master/libipset/bdd/assignments.c  
+  inflating: shadowsocks-libev-master/libipset/bdd/basics.c  
+  inflating: shadowsocks-libev-master/libipset/bdd/bdd-iterator.c  
+  inflating: shadowsocks-libev-master/libipset/bdd/expanded.c  
+  inflating: shadowsocks-libev-master/libipset/bdd/reachable.c  
+  inflating: shadowsocks-libev-master/libipset/bdd/read.c  
+  inflating: shadowsocks-libev-master/libipset/bdd/write.c  
+  inflating: shadowsocks-libev-master/libipset/general.c  
+   creating: shadowsocks-libev-master/libipset/include/
+   creating: shadowsocks-libev-master/libipset/include/ipset/
+   creating: shadowsocks-libev-master/libipset/include/ipset/bdd/
+  inflating: shadowsocks-libev-master/libipset/include/ipset/bdd/nodes.h  
+  inflating: shadowsocks-libev-master/libipset/include/ipset/bits.h  
+  inflating: shadowsocks-libev-master/libipset/include/ipset/errors.h  
+  inflating: shadowsocks-libev-master/libipset/include/ipset/ipset.h  
+  inflating: shadowsocks-libev-master/libipset/include/ipset/logging.h  
+   creating: shadowsocks-libev-master/libipset/map/
+  inflating: shadowsocks-libev-master/libipset/map/Makefile.am  
+ extracting: shadowsocks-libev-master/libipset/map/Makefile.in  
+  inflating: shadowsocks-libev-master/libipset/map/allocation.c  
+  inflating: shadowsocks-libev-master/libipset/map/inspection-template.c.in  
+  inflating: shadowsocks-libev-master/libipset/map/inspection.c  
+  inflating: shadowsocks-libev-master/libipset/map/ipv4_map.c  
+  inflating: shadowsocks-libev-master/libipset/map/ipv6_map.c  
+  inflating: shadowsocks-libev-master/libipset/map/storage.c  
+   creating: shadowsocks-libev-master/libipset/set/
+  inflating: shadowsocks-libev-master/libipset/set/Makefile.am  
+ extracting: shadowsocks-libev-master/libipset/set/Makefile.in  
+  inflating: shadowsocks-libev-master/libipset/set/allocation.c  
+  inflating: shadowsocks-libev-master/libipset/set/inspection-template.c.in  
+  inflating: shadowsocks-libev-master/libipset/set/inspection.c  
+  inflating: shadowsocks-libev-master/libipset/set/ipv4_set.c  
+  inflating: shadowsocks-libev-master/libipset/set/ipv6_set.c  
+  inflating: shadowsocks-libev-master/libipset/set/iterator.c  
+  inflating: shadowsocks-libev-master/libipset/set/storage.c  
+   creating: shadowsocks-libev-master/libsodium/
+  inflating: shadowsocks-libev-master/libsodium/.gitignore  
+  inflating: shadowsocks-libev-master/libsodium/.travis.yml  
+  inflating: shadowsocks-libev-master/libsodium/AUTHORS  
+  inflating: shadowsocks-libev-master/libsodium/ChangeLog  
+  inflating: shadowsocks-libev-master/libsodium/LICENSE  
+  inflating: shadowsocks-libev-master/libsodium/Makefile.am  
+  inflating: shadowsocks-libev-master/libsodium/Makefile.in  
+ extracting: shadowsocks-libev-master/libsodium/README  
+  inflating: shadowsocks-libev-master/libsodium/README.markdown  
+  inflating: shadowsocks-libev-master/libsodium/THANKS  
+  inflating: shadowsocks-libev-master/libsodium/autogen.sh  
+   creating: shadowsocks-libev-master/libsodium/build-aux/
+  inflating: shadowsocks-libev-master/libsodium/build-aux/config.guess  
+  inflating: shadowsocks-libev-master/libsodium/build-aux/config.sub  
+  inflating: shadowsocks-libev-master/libsodium/build-aux/depcomp  
+  inflating: shadowsocks-libev-master/libsodium/build-aux/install-sh  
+  inflating: shadowsocks-libev-master/libsodium/build-aux/ltmain.sh  
+  inflating: shadowsocks-libev-master/libsodium/build-aux/missing  
+  inflating: shadowsocks-libev-master/libsodium/configure  
+  inflating: shadowsocks-libev-master/libsodium/configure.ac  
+  inflating: shadowsocks-libev-master/libsodium/libsodium.pc.in  
+  inflating: shadowsocks-libev-master/libsodium/libsodium.sln  
+  inflating: shadowsocks-libev-master/libsodium/libsodium.vcxproj  
+  inflating: shadowsocks-libev-master/libsodium/libsodium.vcxproj.filters  
+  inflating: shadowsocks-libev-master/libsodium/logo.png  
+   creating: shadowsocks-libev-master/libsodium/m4/
+  inflating: shadowsocks-libev-master/libsodium/m4/ax_check_compile_flag.m4  
+  inflating: shadowsocks-libev-master/libsodium/m4/ax_check_define.m4  
+  inflating: shadowsocks-libev-master/libsodium/m4/ax_check_gnu_make.m4  
+  inflating: shadowsocks-libev-master/libsodium/m4/ax_check_link_flag.m4  
+  inflating: shadowsocks-libev-master/libsodium/m4/ld-output-def.m4  
+  inflating: shadowsocks-libev-master/libsodium/m4/pkg.m4  
+   creating: shadowsocks-libev-master/libsodium/packaging/
+   creating: shadowsocks-libev-master/libsodium/packaging/nuget/
+  inflating: shadowsocks-libev-master/libsodium/packaging/nuget/.gitignore  
+  inflating: shadowsocks-libev-master/libsodium/packaging/nuget/package.bat  
+  inflating: shadowsocks-libev-master/libsodium/packaging/nuget/package.config  
+  inflating: shadowsocks-libev-master/libsodium/packaging/nuget/package.gsl  
+  inflating: shadowsocks-libev-master/libsodium/packaging/nuget/package.nuspec  
+  inflating: shadowsocks-libev-master/libsodium/packaging/nuget/package.targets  
+  inflating: shadowsocks-libev-master/libsodium/packaging/nuget/package.xml  
+   creating: shadowsocks-libev-master/libsodium/src/
+ extracting: shadowsocks-libev-master/libsodium/src/Makefile.am  
+  inflating: shadowsocks-libev-master/libsodium/src/Makefile.in  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/Makefile.am  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/Makefile.in  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_aead/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_aead/aes256gcm/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_aead/aes256gcm/aesni/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_aead/aes256gcm/aesni/aead_aes256gcm_aesni.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_aead/chacha20poly1305/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_aead/chacha20poly1305/sodium/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_aead/chacha20poly1305/sodium/aead_chacha20poly1305.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/crypto_auth.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha256/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha256/auth_hmacsha256_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha256/cp/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha256/cp/hmac_hmacsha256.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha256/cp/verify_hmacsha256.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512/auth_hmacsha512_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512/cp/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512/cp/hmac_hmacsha512.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512/cp/verify_hmacsha512.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512256/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512256/auth_hmacsha512256_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512256/cp/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512256/cp/hmac_hmacsha512256.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_auth/hmacsha512256/cp/verify_hmacsha512256.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/crypto_box.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/crypto_box_easy.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/crypto_box_seal.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/curve25519xsalsa20poly1305/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/curve25519xsalsa20poly1305/box_curve25519xsalsa20poly1305_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/curve25519xsalsa20poly1305/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/curve25519xsalsa20poly1305/ref/after_curve25519xsalsa20poly1305.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/curve25519xsalsa20poly1305/ref/before_curve25519xsalsa20poly1305.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/curve25519xsalsa20poly1305/ref/box_curve25519xsalsa20poly1305.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_box/curve25519xsalsa20poly1305/ref/keypair_curve25519xsalsa20poly1305.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/hsalsa20/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/hsalsa20/core_hsalsa20_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/hsalsa20/ref2/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/hsalsa20/ref2/core_hsalsa20.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa20/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa20/core_salsa20_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa20/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa20/ref/core_salsa20.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa2012/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa2012/core_salsa2012_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa2012/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa2012/ref/core_salsa2012.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa208/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa208/core_salsa208_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa208/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_core/salsa208/ref/core_salsa208.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/generichash_blake2_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2-impl.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2b-compress-ref.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2b-compress-sse41.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2b-compress-ssse3.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2b-load-sse2.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2b-load-sse41.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2b-ref.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/blake2b-round.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/blake2/ref/generichash_blake2b.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_generichash/crypto_generichash.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/crypto_hash.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/sha256/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/sha256/cp/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/sha256/cp/hash_sha256.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/sha256/hash_sha256_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/sha512/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/sha512/cp/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/sha512/cp/hash_sha512.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_hash/sha512/hash_sha512_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/crypto_onetimeauth.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/donna/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/donna/poly1305_donna.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/donna/poly1305_donna.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/donna/poly1305_donna32.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/donna/poly1305_donna64.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/onetimeauth_poly1305.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/onetimeauth_poly1305.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/sse2/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/sse2/poly1305_sse2.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_onetimeauth/poly1305/sse2/poly1305_sse2.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/crypto_scrypt-common.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/crypto_scrypt.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/nosse/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/nosse/pwhash_scryptsalsa208sha256_nosse.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/pbkdf2-sha256.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/pbkdf2-sha256.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/pwhash_scryptsalsa208sha256.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/scrypt_platform.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/sse/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/sse/pwhash_scryptsalsa208sha256_sse.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/sysendian.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/crypto_scalarmult.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/donna_c64/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/donna_c64/curve25519_donna_c64.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/donna_c64/curve25519_donna_c64.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/curve25519_ref10.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_0_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_1_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_add_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_copy_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_cswap_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_frombytes_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_invert_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_mul121666_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_mul_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_sq_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_sub_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/fe_tobytes_curve25519_ref10.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/montgomery.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/pow225521.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/consts.S  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/consts_namespace.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/curve25519_sandy2x.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/curve25519_sandy2x.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_invert.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_mul.S  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_namespace.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_nsquare.S  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe51_pack.S  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/fe_frombytes_sandy2x.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/ladder.S  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/ladder.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/ladder_base.S  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/ladder_base.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/ladder_base_namespace.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/ladder_namespace.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/sandy2x/sandy2x.S  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/scalarmult_curve25519.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_scalarmult/curve25519/scalarmult_curve25519.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_secretbox/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_secretbox/crypto_secretbox.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_secretbox/crypto_secretbox_easy.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_secretbox/xsalsa20poly1305/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_secretbox/xsalsa20poly1305/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_secretbox/xsalsa20poly1305/ref/box_xsalsa20poly1305.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_secretbox/xsalsa20poly1305/secretbox_xsalsa20poly1305_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_shorthash/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_shorthash/crypto_shorthash.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_shorthash/siphash24/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_shorthash/siphash24/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_shorthash/siphash24/ref/shorthash_siphash24.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_shorthash/siphash24/shorthash_siphash24_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/crypto_sign.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/
+ extracting: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/description  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/base.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/base2.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/d.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/d2.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_0.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_1.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_add.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_cmov.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_copy.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_frombytes.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_invert.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_isnegative.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_isnonzero.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_mul.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_neg.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_pow22523.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_sq.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_sq2.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_sub.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/fe_tobytes.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_add.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_add.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_double_scalarmult.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_frombytes.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_madd.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_madd.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_msub.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_msub.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p1p1_to_p2.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p1p1_to_p3.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p2_0.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p2_dbl.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p2_dbl.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p3_0.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p3_dbl.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p3_to_cached.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p3_to_p2.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_p3_tobytes.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_precomp_0.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_scalarmult_base.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_sub.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_sub.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/ge_tobytes.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/keypair.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/obsolete.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/open.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/pow22523.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/pow225521.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/sc.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/sc_muladd.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/sc_reduce.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/sign.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/ref10/sqrtm1.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_sign/ed25519/sign_ed25519_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/afternm_aes128ctr.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/beforenm_aes128ctr.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/common.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/common_aes128ctr.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/consts.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/consts_aes128ctr.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/int128.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/int128_aes128ctr.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/stream_aes128ctr.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/types.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/portable/xor_afternm_aes128ctr.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/aes128ctr/stream_aes128ctr_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/ref/stream_chacha20_ref.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/ref/stream_chacha20_ref.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/stream_chacha20.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/stream_chacha20.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/vec/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/vec/stream_chacha20_vec.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/chacha20/vec/stream_chacha20_vec.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/crypto_stream.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa20/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa20/amd64_xmm6/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa20/amd64_xmm6/stream_salsa20_amd64_xmm6.S  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa20/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa20/ref/stream_salsa20_ref.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa20/ref/xor_salsa20_ref.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa20/stream_salsa20_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa2012/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa2012/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa2012/ref/stream_salsa2012.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa2012/ref/xor_salsa2012.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa2012/stream_salsa2012_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa208/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa208/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa208/ref/stream_salsa208.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa208/ref/xor_salsa208.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/salsa208/stream_salsa208_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/xsalsa20/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/xsalsa20/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/xsalsa20/ref/stream_xsalsa20.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/xsalsa20/ref/xor_xsalsa20.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_stream/xsalsa20/stream_xsalsa20_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/16/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/16/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/16/ref/verify_16.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/16/verify_16_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/32/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/32/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/32/ref/verify_32.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/32/verify_32_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/64/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/64/ref/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/64/ref/verify_64.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/crypto_verify/64/verify_64_api.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/include/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/Makefile.am  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/Makefile.in  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium.h  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/core.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_aead_aes256gcm.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_aead_chacha20poly1305.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_auth.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha256.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512256.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_box.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_core_hsalsa20.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_core_salsa20.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_core_salsa2012.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_core_salsa208.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_generichash.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_generichash_blake2b.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_hash.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_hash_sha256.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_hash_sha512.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_int32.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_int64.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_onetimeauth.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_pwhash_scryptsalsa208sha256.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_scalarmult.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_scalarmult_curve25519.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_secretbox.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_shorthash.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_shorthash_siphash24.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_sign.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_sign_ed25519.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_sign_edwards25519sha512batch.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_stream.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_stream_aes128ctr.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_stream_chacha20.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_stream_salsa20.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_stream_salsa2012.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_stream_salsa208.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_stream_xsalsa20.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_uint16.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_uint32.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_uint64.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_uint8.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_verify_16.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_verify_32.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/crypto_verify_64.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/export.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/randombytes.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/randombytes_nativeclient.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/randombytes_salsa20_random.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/randombytes_sysrandom.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/runtime.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/utils.h  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/include/sodium/version.h.in  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/randombytes/
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/randombytes/nativeclient/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/randombytes/nativeclient/randombytes_nativeclient.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/randombytes/randombytes.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/randombytes/salsa20/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/randombytes/salsa20/randombytes_salsa20_random.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/randombytes/sysrandom/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/randombytes/sysrandom/randombytes_sysrandom.c  
+   creating: shadowsocks-libev-master/libsodium/src/libsodium/sodium/
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/sodium/core.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/sodium/runtime.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/sodium/utils.c  
+  inflating: shadowsocks-libev-master/libsodium/src/libsodium/sodium/version.c  
+   creating: shadowsocks-libev-master/libudns/
+  inflating: shadowsocks-libev-master/libudns/COPYING.LGPL  
+  inflating: shadowsocks-libev-master/libudns/Makefile.am  
+  inflating: shadowsocks-libev-master/libudns/Makefile.in  
+  inflating: shadowsocks-libev-master/libudns/NEWS  
+  inflating: shadowsocks-libev-master/libudns/NOTES  
+  inflating: shadowsocks-libev-master/libudns/TODO  
+  inflating: shadowsocks-libev-master/libudns/dnsget.1  
+  inflating: shadowsocks-libev-master/libudns/dnsget.c  
+  inflating: shadowsocks-libev-master/libudns/ex-rdns.c  
+  inflating: shadowsocks-libev-master/libudns/getopt.c  
+  inflating: shadowsocks-libev-master/libudns/inet_XtoX.c  
+  inflating: shadowsocks-libev-master/libudns/rblcheck.1  
+  inflating: shadowsocks-libev-master/libudns/rblcheck.c  
+  inflating: shadowsocks-libev-master/libudns/udns.3  
+  inflating: shadowsocks-libev-master/libudns/udns.h  
+  inflating: shadowsocks-libev-master/libudns/udns_XtoX.c  
+  inflating: shadowsocks-libev-master/libudns/udns_bl.c  
+  inflating: shadowsocks-libev-master/libudns/udns_codes.c  
+  inflating: shadowsocks-libev-master/libudns/udns_dn.c  
+  inflating: shadowsocks-libev-master/libudns/udns_dntosp.c  
+  inflating: shadowsocks-libev-master/libudns/udns_init.c  
+  inflating: shadowsocks-libev-master/libudns/udns_jran.c  
+  inflating: shadowsocks-libev-master/libudns/udns_misc.c  
+  inflating: shadowsocks-libev-master/libudns/udns_parse.c  
+  inflating: shadowsocks-libev-master/libudns/udns_resolver.c  
+  inflating: shadowsocks-libev-master/libudns/udns_rr_a.c  
+  inflating: shadowsocks-libev-master/libudns/udns_rr_mx.c  
+  inflating: shadowsocks-libev-master/libudns/udns_rr_naptr.c  
+  inflating: shadowsocks-libev-master/libudns/udns_rr_ptr.c  
+  inflating: shadowsocks-libev-master/libudns/udns_rr_srv.c  
+  inflating: shadowsocks-libev-master/libudns/udns_rr_txt.c  
+   creating: shadowsocks-libev-master/m4/
+  inflating: shadowsocks-libev-master/m4/ax_pthread.m4  
+  inflating: shadowsocks-libev-master/m4/ax_tls.m4  
+  inflating: shadowsocks-libev-master/m4/inet_ntop.m4  
+  inflating: shadowsocks-libev-master/m4/libtool.m4  
+  inflating: shadowsocks-libev-master/m4/ltoptions.m4  
+  inflating: shadowsocks-libev-master/m4/ltsugar.m4  
+  inflating: shadowsocks-libev-master/m4/ltversion.m4  
+  inflating: shadowsocks-libev-master/m4/lt~obsolete.m4  
+  inflating: shadowsocks-libev-master/m4/mbedtls.m4  
+  inflating: shadowsocks-libev-master/m4/openssl.m4  
+  inflating: shadowsocks-libev-master/m4/polarssl.m4  
+  inflating: shadowsocks-libev-master/m4/stack-protector.m4  
+  inflating: shadowsocks-libev-master/m4/zlib.m4  
+   creating: shadowsocks-libev-master/man/
+  inflating: shadowsocks-libev-master/man/shadowsocks-libev.8  
+  inflating: shadowsocks-libev-master/man/ss-local.1  
+  inflating: shadowsocks-libev-master/man/ss-manager.1  
+  inflating: shadowsocks-libev-master/man/ss-nat.1  
+  inflating: shadowsocks-libev-master/man/ss-redir.1  
+  inflating: shadowsocks-libev-master/man/ss-server.1  
+  inflating: shadowsocks-libev-master/man/ss-tunnel.1  
+   creating: shadowsocks-libev-master/openwrt/
+  inflating: shadowsocks-libev-master/openwrt/Makefile  
+   creating: shadowsocks-libev-master/openwrt/files/
+  inflating: shadowsocks-libev-master/openwrt/files/shadowsocks.init  
+  inflating: shadowsocks-libev-master/openwrt/files/shadowsocks.json  
+   creating: shadowsocks-libev-master/rpm/
+   creating: shadowsocks-libev-master/rpm/SOURCES/
+   creating: shadowsocks-libev-master/rpm/SOURCES/etc/
+   creating: shadowsocks-libev-master/rpm/SOURCES/etc/init.d/
+  inflating: shadowsocks-libev-master/rpm/SOURCES/etc/init.d/shadowsocks-libev  
+   creating: shadowsocks-libev-master/rpm/SPECS/
+  inflating: shadowsocks-libev-master/rpm/SPECS/shadowsocks-libev.spec  
+  inflating: shadowsocks-libev-master/rpm/genrpm.sh  
+  inflating: shadowsocks-libev-master/shadowsocks-libev.pc.in  
+   creating: shadowsocks-libev-master/src/
+  inflating: shadowsocks-libev-master/src/Makefile.am  
+  inflating: shadowsocks-libev-master/src/Makefile.in  
+  inflating: shadowsocks-libev-master/src/acl.c  
+  inflating: shadowsocks-libev-master/src/acl.h  
+  inflating: shadowsocks-libev-master/src/android.c  
+  inflating: shadowsocks-libev-master/src/cache.c  
+  inflating: shadowsocks-libev-master/src/cache.h  
+  inflating: shadowsocks-libev-master/src/common.h  
+  inflating: shadowsocks-libev-master/src/encrypt.c  
+  inflating: shadowsocks-libev-master/src/encrypt.h  
+  inflating: shadowsocks-libev-master/src/jconf.c  
+  inflating: shadowsocks-libev-master/src/jconf.h  
+  inflating: shadowsocks-libev-master/src/json.c  
+  inflating: shadowsocks-libev-master/src/json.h  
+  inflating: shadowsocks-libev-master/src/local.c  
+  inflating: shadowsocks-libev-master/src/local.h  
+  inflating: shadowsocks-libev-master/src/manager.c  
+  inflating: shadowsocks-libev-master/src/manager.h  
+  inflating: shadowsocks-libev-master/src/netutils.c  
+  inflating: shadowsocks-libev-master/src/netutils.h  
+  inflating: shadowsocks-libev-master/src/redir.c  
+  inflating: shadowsocks-libev-master/src/redir.h  
+  inflating: shadowsocks-libev-master/src/resolv.c  
+  inflating: shadowsocks-libev-master/src/resolv.h  
+  inflating: shadowsocks-libev-master/src/server.c  
+  inflating: shadowsocks-libev-master/src/server.h  
+  inflating: shadowsocks-libev-master/src/shadowsocks.h  
+  inflating: shadowsocks-libev-master/src/socks5.h  
+  inflating: shadowsocks-libev-master/src/ss-nat  
+  inflating: shadowsocks-libev-master/src/tunnel.c  
+  inflating: shadowsocks-libev-master/src/tunnel.h  
+  inflating: shadowsocks-libev-master/src/udprelay.c  
+  inflating: shadowsocks-libev-master/src/udprelay.h  
+  inflating: shadowsocks-libev-master/src/uthash.h  
+  inflating: shadowsocks-libev-master/src/utils.c  
+  inflating: shadowsocks-libev-master/src/utils.h  
+  inflating: shadowsocks-libev-master/src/win32.c  
+  inflating: shadowsocks-libev-master/src/win32.h  
+--2016-06-14 15:29:44--  https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.31.18.133
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.31.18.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2198 (2.1K) [text/plain]
+Saving to: 'shadowsocks-libev'
+
+     0K ..                                                    100% 6.70M=0s
+
+2016-06-14 15:29:47 (6.70 MB/s) - 'shadowsocks-libev' saved [2198/2198]
+
+firewall set start...
+./shadowsocks-libev.sh: line 43: [: ==: unary operator expected
+./shadowsocks-libev.sh: line 43: [: ==: unary operator expected
+firewall set completed...
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking sys/inotify.h usability... yes
+checking sys/inotify.h presence... yes
+checking for sys/inotify.h... yes
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking port.h usability... no
+checking port.h presence... no
+checking for port.h... no
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/signalfd.h usability... yes
+checking sys/signalfd.h presence... yes
+checking for sys/signalfd.h... yes
+checking for inotify_init... yes
+checking for epoll_ctl... yes
+checking for kqueue... no
+checking for port_create... no
+checking for poll... yes
+checking for select... yes
+checking for eventfd... yes
+checking for signalfd... yes
+checking for clock_gettime... yes
+checking for nanosleep... yes
+checking for library containing floor... -lm
+checking for thread local storage (TLS) class... __thread
+checking zlib.h usability... no
+checking zlib.h presence... no
+checking for zlib.h... no
+configure: error: "zlib header files not found."
+make: *** No targets specified and no makefile found.  Stop.
+
+Shadowsocks-libev install failed! Please visit https://teddysun.com/357.html and contact.

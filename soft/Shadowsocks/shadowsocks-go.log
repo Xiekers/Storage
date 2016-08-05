@@ -1,0 +1,120 @@
+[3;J[H[2J
+#############################################################
+# One click Install Shadowsocks-go server                   #
+# Intro: https://teddysun.com/392.html                      #
+# Author: Teddysun <i@teddysun.com>                         #
+# Thanks: @cyfdecyf <https://twitter.com/cyfdecyf>          #
+#############################################################
+
+Please input password for shadowsocks-go:
+(Default password: teddysun.com):
+---------------------------
+password = xiaoke
+---------------------------
+
+Please input port for shadowsocks-go [1-65535]:
+(Default port: 8989):
+---------------------------
+port = 666
+---------------------------
+
+
+Press any key to start...or Press Ctrl+C to cancel
+Hit:1 http://mirrors.ustc.edu.cn/ubuntu xenial InRelease
+Hit:2 http://mirrors.ustc.edu.cn/ubuntu xenial-security InRelease
+Hit:3 http://mirrors.ustc.edu.cn/ubuntu xenial-updates InRelease
+Hit:4 http://mirrors.ustc.edu.cn/ubuntu xenial-proposed InRelease
+Hit:5 http://mirrors.ustc.edu.cn/ubuntu xenial-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.47.0-1ubuntu2).
+gzip is already the newest version (1.6-4ubuntu1).
+unzip is already the newest version (6.0-20ubuntu1).
+wget is already the newest version (1.17.1-1ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 75 not upgraded.
+Getting Public IP address, Please wait a moment...
+Your main public IP is	[32m123.59.76.229[0m
+
+--2016-06-14 15:31:22--  http://lamp.teddysun.com/shadowsocks/shadowsocks-server-linux64-1.1.5.gz
+Resolving lamp.teddysun.com (lamp.teddysun.com)... 167.88.112.178
+Connecting to lamp.teddysun.com (lamp.teddysun.com)|167.88.112.178|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1429972 (1.4M) [application/x-gzip]
+Saving to: 'shadowsocks-server-linux64-1.1.5.gz'
+
+     0K .......... .......... .......... .......... ..........  3% 87.4K 15s
+    50K .......... .......... .......... .......... ..........  7%  168K 11s
+   100K .......... .......... .......... .......... .......... 10% 85.3K 12s
+   150K .......... .......... .......... .......... .......... 14% 15.7M 9s
+   200K .......... .......... .......... .......... .......... 17%  169K 8s
+   250K .......... .......... .......... .......... .......... 21% 85.7K 9s
+   300K .......... .......... .......... .......... .......... 25% 83.4K 9s
+   350K .......... .......... .......... .......... .......... 28% 56.8K 10s
+   400K .......... .......... .......... .......... .......... 32% 28.4K 12s
+   450K .......... .......... .......... .......... .......... 35% 43.0K 12s
+   500K .......... .......... .......... .......... .......... 39% 80.4K 11s
+   550K .......... .......... .......... .......... .......... 42% 42.8K 11s
+   600K .......... .......... .......... .......... .......... 46% 56.0K 11s
+   650K .......... .......... .......... .......... .......... 50% 34.1K 11s
+   700K .......... .......... .......... .......... .......... 53% 57.2K 10s
+   750K .......... .......... .......... .......... .......... 57% 80.2K 9s
+   800K .......... .......... .......... .......... .......... 60% 87.4K 8s
+   850K .......... .......... .......... .......... .......... 64% 93.2K 7s
+   900K .......... .......... .......... .......... .......... 68% 86.6K 7s
+   950K .......... .......... .......... .......... .......... 71%  173K 6s
+  1000K .......... .......... .......... .......... .......... 75% 80.5K 5s
+  1050K .......... .......... .......... .......... .......... 78% 86.6K 4s
+  1100K .......... .......... .......... .......... .......... 82% 85.3K 3s
+  1150K .......... .......... .......... .......... .......... 85%  121K 3s
+  1200K .......... .......... .......... .......... .......... 89% 67.0K 2s
+  1250K .......... .......... .......... .......... .......... 93% 85.0K 1s
+  1300K .......... .......... .......... .......... .......... 96% 88.3K 1s
+  1350K .......... .......... .......... .......... ......    100% 78.3K=19s
+
+2016-06-14 15:31:43 (73.3 KB/s) - 'shadowsocks-server-linux64-1.1.5.gz' saved [1429972/1429972]
+
+Decompress shadowsocks-server-linux64-1.1.5.gz success.
+--2016-06-14 15:31:43--  https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go-debian
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.31.19.133
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.31.19.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2045 (2.0K) [text/plain]
+Saving to: 'shadowsocks-go'
+
+     0K .                                                     100% 8.68M=0s
+
+2016-06-14 15:31:45 (8.68 MB/s) - 'shadowsocks-go' saved [2045/2045]
+
+shadowsocks-go install success!
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+starting shadowsocks-go
+shadowsocks-go running with PID 2730
+Shadowsocks-go start success!
+[3;J[H[2J
+Congratulations, shadowsocks-go install completed!
+Your Server IP: [41;37m 123.59.76.229 [0m
+Your Server Port: [41;37m 666 [0m
+Your Password: [41;37m xiaoke [0m
+Your Local Port: [41;37m 1080 [0m
+Your Encryption Method: [41;37m aes-256-cfb [0m
+
+Welcome to visit:https://teddysun.com/392.html
+Enjoy it!
+
