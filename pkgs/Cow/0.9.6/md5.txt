@@ -1,8 +1,0 @@
-d7c35ceb1bed1074e595163f13517457  cow-linux32-0.9.6.gz
-7f8f90d8b2dd6a29aad8c7518099497d  cow-linux64-0.9.6.gz
-c49aae989d088eabf9ba243cbca06cfb  cow-linux-armv5tel-0.9.6.gz
-42feb3c5f71ee4215ab95d65e791bc6f  cow-linux-armv6l-0.9.6.gz
-1872e9cc126b3359e1045654fbdcb2ae  cow-linux-armv7l-0.9.6.gz
-19ddb8b043130c6522dac0c04c11a741  cow-mac64-0.9.6.gz
-e93f984a5f254de6f426873faaf56d98  cow-win32-0.9.6.zip
-5af8a4210196940bc275419b1638cb6c  cow-win64-0.9.6.zip
