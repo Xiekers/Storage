@@ -1,5 +1,7 @@
 .git
+.gitignore
 git.sh
+pkgs.sh
 robots.txt
 html/
 100MB.test
