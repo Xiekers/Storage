@@ -11,9 +11,9 @@ error_reporting(0); //抑制所有错误信息
 ob_start();
 date_default_timezone_set('Asia/Shanghai');//此句用于消除时间差
 
-$title = 'Xiekers';
+$title = ' Xiekers -';
 
-$version = "v0.4.7"; //版本号
+$version = " v0.4.7"; //版本号
 
 
 
@@ -973,11 +973,11 @@ if ($_GET['act'] == "rt")
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title><?php echo $title.$version; ?></title>
+<title><?php echo $title . $version; ?></title>
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="http://www.hundun.cc/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="//sf.xieke.org/favicon.ico" type="image/x-icon" />
 <!-- Powered by: Yahei.Net -->
 
 <style type="text/css">
@@ -1173,7 +1173,7 @@ function displayData(dataJSON)
 			<th class="w_top"><a href="#w_MySQL">MySQL检测</a></th>
 			<th class="w_top"><a href="#w_function">函数检测</a></th>
 			<th class="w_top"><a href="#w_mail">邮件检测</a></th>
-			<th class="w_top"><a href="http://www.hundun.cc/blogs-158">探针下载</a></th>
+			<th class="w_top"><a href="http://www.yahei.net/tz/tz.zip">探针下载</a></th>
 		</tr>
 	</table>
 
@@ -2016,7 +2016,7 @@ else
 
   <tr align="center">
 
-    <td align="left">美国 jiasu.biz</td>
+    <td align="left">OVH</td>
 
     <td>0.521秒</td>
 
@@ -2284,7 +2284,7 @@ else
 
 	<table>
 		<tr>
-			<td class="w_foot"><A HREF="http://bbs.xieke.org" target="_blank">邪客社区</A></td>
+			<td class="w_foot"><A HREF="http://www.yahei.net/ " target="_blank">Yahei</A></td>
 			<td class="w_foot"><A HREF="http://blog.xieke.org" target="_blank">小可博客</A></td>
 			<td class="w_foot"><?php $run_time = sprintf('%0.4f', microtime_float() - $time_start);?>Processed in <?php echo $run_time?> seconds. <?php echo memory_usage();?> memory usage.</td>
 			<td class="w_foot"><a href="#w_top">返回顶部</a></td>
